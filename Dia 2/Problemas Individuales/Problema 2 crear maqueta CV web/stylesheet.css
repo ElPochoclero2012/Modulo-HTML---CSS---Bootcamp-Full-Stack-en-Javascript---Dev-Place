@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(236, 213, 183);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: rgb(122, 13, 13);
+    text-align: center;
+ }
+
+ #anon{
+    width: 30%;
+    height: 30%;
+ }

@@ -1,0 +1,72 @@
+<!--REALIZAR UN PROTOTIPO DE REGISTRO PARA EL VIDEOJUEGO LIGA DE LAS LEYENDAS (USAR DATALIST, SECTION, FORM, Y HACER UN FOOTER)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <a title="LOL pagina" href="https://www.leagueoflegends.com/" target="_blank"><img src="./img/logolol.png" alt="Liga" style="width:234px"></a>
+    </div>
+    <section>
+
+             <form action="" method="post">
+                 <div>
+                    <label for="nombre">Ingrese su nombre de INVOCADOR</label>
+                     <input type="text" id="nombre" name="nombre"> 
+                 </div>
+
+                 <div>
+                     <label>Seleccione su sexo:</label> 
+                         <input type="radio" id="Masculino" name="sexo" value="Masculino">
+                         <label for="Masculino">Masculino</label>
+                         <input type="radio" id="Femenino" name="sexo" value="Femenino">
+                         <label for="Femenino">Femenino</label>
+                 </div>
+
+                 <div>
+                     <label for="correo">Ingrese su correo electronico </label>
+                     <input type="email" id="correo" name="correo"> 
+                 </div>
+
+                 <div>
+                    <label for="clave">Ingrese su clave de invocador </label>
+                    <input type="password" id="clave" name="clave"> 
+                </div>
+
+                <div>
+                    <label for="line">Ingrese su rol</label>
+                        <input list="line">
+                            <datalist id="line">
+                                <Option>TOP</Option>
+                                <Option>MID</Option>
+                                <Option>ADC</Option>
+                                <Option>SUPP</Option>
+                                <Option>JG</Option>
+                            </datalist>                    
+                </div>
+
+                 <div>
+                     <input type="radio" id="humano" name="humano" value="humano">                     
+                     <label for="humano">¿Es usted humano? (capcha) <img src="./img/RecaptchaLogo.svg.png" alt="Captcha" style="width:15px"> </label>
+                 </div>
+
+                 <div>
+                     <input type="checkbox" id="correos" name="correos" value="correos"> 
+                     <label for="correos">¿Quiere recibir correos sobre nuestros productos?</label>
+                 </div>
+
+                <div>
+                    <button type="submit">Enviar</button> 
+                </div>
+            </form>
+     </section>
+     <div>
+        <footer>Hecho por <a href="https://www.konami.com/games/silenthill/us/en/">Marcelo Diego Albano </a><a href="https://youtu.be/yKELA1qBAKA">Victor Maximiliano Herrera</a></footer>
+
+     </div>
+</body>
+</html>
