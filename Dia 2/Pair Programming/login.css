@@ -1,0 +1,67 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background-image: url("./img/firewatch.jpg");
+    overflow: hidden;
+}
+#caja{
+    padding: 20px;
+    margin: 0 auto;
+    width: 50%;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    flex: 1 1 100%;
+    align-items: stretch;
+    justify-content: space-between;
+    box-shadow: 0 0 20px 6px #090b6f85;
+    background-image: url("./img/unknown.png")
+    
+    
+}
+#mitad {
+    background-color: white ;
+
+    
+    width: 50%;
+    border-radius: 15px;
+}
+#Iniciar {
+    
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background-color: rgb(233, 230, 230);
+    
+    border-radius: 10px;
+
+}
+.color{
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    text-align: center;
+    
+}
+.accept {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #14ce33;
+    border-radius: 15px;
+    border: #afaaaa;
+    color: white;
+}
+.container {
+    padding: 16px;
+}
+span.psw {
+    float: right;
+    padding-top: 16px;
+    color: white;
+  }
+  .accept:hover{
+    background-color: green;
+    cursor: pointer;
+  }
