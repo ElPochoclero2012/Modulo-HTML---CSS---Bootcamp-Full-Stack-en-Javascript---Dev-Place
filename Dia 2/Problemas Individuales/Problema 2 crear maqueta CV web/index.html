@@ -13,7 +13,9 @@
             <thead>
                 <tr>
                     <th>
-                        <img src="./img/image.jpeg" alt="anon" id="anon">
+                        <div class="card">
+                            <img src="./img/image.jpeg" alt="Avatar" style="width:101%">
+                        </div>
                     </th>
                 </tr>
                 <tr>
@@ -291,6 +293,49 @@
                         </select>
                     </th>
                 </tr>
+                    <th>¿Experiencia laboral?</th>
+                </tr>
+                <tr>
+                    <th><input type="radio" id="exp" name="exp" value="si">Si</th>
+                </tr>
+                <tr>
+                    <th><input type="radio" id="exp" name="exp" value="no">No</th>
+                </tr>
+                <tr>
+                    <th>Formación academica?</th>
+                </tr>
+                <tr>
+                    <th>                       
+                        <input list="formacion">
+                        <datalist id="formacion">
+                            <Option>Secundario incompleto</Option>
+                            <Option>Secundario completo</Option>
+                            <Option>Estudios superiores</Option>
+                        </datalist>   
+                    </th>
+                </tr>
+                <tr>
+                    <th>¿Segundo idioma?</th>
+                </tr>
+                <tr>
+                    <th>                       
+                        <input list="idioma">
+                        <datalist id="idioma">
+                            <Option>No tengo</Option>
+                            <Option>Ingles</Option>
+                            <Option>Chino</Option>
+                            <Option>Aleman</Option>
+                        </datalist>   
+                    </th>
+                </tr>
+                <tr>
+                    <th>Intereses personales?</th>
+                </tr>
+                <tr>
+                    <th>
+                        <textarea name="intereses" id="intereses" cols="30" rows="10"></textarea>
+                    </th>
+                </tr>
                 <tr>
                     <th>Informacion de contacto: </th>
                 </tr>
@@ -306,12 +351,17 @@
                 <tr>
                     <th><input type="text" id="telefono" name="telefono" placeholder="telefono"></th>
                 </tr>
+                <tr>
+                    <th>Correo Electronico</th>
+                </tr>
+                <tr>
+                    <th><input type="email" id="email" name="email" placeholder="Correo"></th>
+                </tr>
+                <tr>
+                    <th><button type="submit">Enviar</button></th>
+                </tr>
             </thead>
         </table>
     </div>
-
-    <footer class="footer">
-        <p>Marcelo Albano &copy; 2022</p>
-    </footer>
 </body>
 </html>
