@@ -1,0 +1,119 @@
+.Flex{
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  width: 100%;
+  margin-top: 5px;
+  
+}
+.List{
+  text-align: center;
+  margin: 55px;
+  padding: 5%;
+  color: white;
+  display: inline;
+  list-style-type: none;
+
+}
+.List:hover{
+  background-color: white;
+  cursor: pointer;
+  color: black;
+}
+#carrito{
+  margin-right: 0px;
+}
+#logo{
+  margin-left: 0px;
+}
+.card {
+  padding: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+
+  text-align: center;
+  font-family: arial;
+  margin-bottom: 0px;
+  
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+.card:hover{
+  box-shadow: -2px 4px 10px;
+}
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 50%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+.Grid{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 33% 33% 33%;
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: rgb(0, 0, 0);
+  background-color: rgb(128, 122, 122);
+  text-align: center;
+  opacity: 0.8;
+}
+@media screen and (max-width:1454px) {
+  #logo{
+      padding: 90px;
+  }
+  #carrito{
+      margin-left: 0px;
+  }
+  
+  
+  
+  .Grid{
+      grid-template-columns: 33% 33% 33% ;
+      grid-template-rows: 25% 25% 25% 25%;
+  }
+  #La{
+      display: none;
+  }
+} 
+@media screen and (max-width:650px) {
+  #logo{
+      padding: 90px;
+  }
+  #carrito{
+      margin-left: 0px;
+      padding: 0px;
+  }
+  .Grid{
+      grid-template-columns: 50% 50%  ;
+      grid-template-rows: 20% 20% 20% 20% 20%;
+  }
+  
+}
+
+@media screen and (max-width:555px){
+  #carrito{
+      margin-left: 0px;
+      padding: 0px;
+  }
+}
