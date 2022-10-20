@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Bootstrap Product List Carousel for Ecommerce Website</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./css/stylesheet.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+<link rel="stylesheet" href="css/A.ionicons.min.css+style.css,Mcc.bnVW-mDmyB.css.pagespeed.cf.imjSJubmRP.css" />
+</head>
+<body>
+	<header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <img src="./img/Nike-Logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-black-50" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black-50" href="./partners.html">Nuestros Partners</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black-50" href="#">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-black-50 " href="./precios.html">Precios</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="exampleModalLabel">Se ha agregado al carrito correctamente </h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-secondary" data-dismiss="modal">Seguir comprando</button>
+			  <button type="button" class="btn btn-primary">Ir al carrito</button>
+			</div>
+		  </div>
+		</div>
+	  </div>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h2>Nuestros Productos</h2>
+			<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+			<!-- Carousel indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>   
+			<!-- Wrapper for carousel items -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/nikeairmax97.jpeg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Nike Air Max 97</h4>
+									<p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p>
+									<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+										Agregar al carrito
+									  </button>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/nikeairmaxsc.jpeg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Nike Air Max SC</h4>
+									<p class="item-price"><strike>$25.00</strike> <span>$23.99</span></p>
+									<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+										Agregar al carrito
+									  </button>
+								</div>						
+							</div>
+						</div>		
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/nikeairmaxup.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Nike Air Max Up</h4>
+									<p class="item-price"><strike>$899.00</strike> <span>$649.00</span></p>
+									<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+										Agregar al carrito
+									  </button>
+								</div>						
+							</div>
+						</div>								
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/nikecourtlegacy.jpeg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Nike Court Legacy</h4>
+									<p class="item-price"><strike>$315.00</strike> <span>$250.00</span></p>
+									<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+										Agregar al carrito
+									  </button>
+								</div>						
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/NikeAirForce1.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Nike Air Force 1</h4>
+									<p class="item-price"><strike>$289.00</strike> <span>$269.00</span></p>
+									<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+										Agregar al carrito
+									  </button>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/NikeRevolution6NextNature.jpeg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Nike Revolution 6</h4>
+									<p class="item-price"><strike>$1099.00</strike> <span>$869.00</span></p>
+									<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+										Agregar al carrito
+									  </button>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/MDRUNNER2MUJER.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>MDR Runner 2 Mujer</h4>
+									<p class="item-price"><strike>$109.00</strike> <span>$99.00</span></p>
+									<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+										Agregar al carrito
+									  </button>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/NIKEDUNKHIGH.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Dunk High</h4>
+									<p class="item-price"><strike>$599.00</strike> <span>$569.00</span></p>
+									<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+										Agregar al carrito
+									  </button>
+								</div>						
+							</div>
+						</div>						
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/NikeAirMaxFuryosa.jpeg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Air Max Furyosa</h4>
+									<p class="item-price"><strike>$369.00</strike> <span>$349.00</span></p>
+									<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+										Agregar al carrito
+									  </button>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/NikeAirMaxExceeLea.jpeg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Air Max Excee Lea</h4>
+									<p class="item-price"><strike>$315.00</strike> <span>$250.00</span></p>
+									<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+										Agregar al carrito
+									  </button>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/NikeTanjun.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Tanjun</h4>
+									<p class="item-price"><strike>$450.00</strike> <span>$418.00</span></p>
+									<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+										Agregar al carrito
+									  </button>
+								</div>						
+							</div>
+						</div>	
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="./img/SB Blazer Court.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>SB Blazer Court</h4>
+									<p class="item-price"><strike>$350.00</strike> <span>$330.00</span></p>
+									<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+										Agregar al carrito
+									  </button>
+								</div>						
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Carousel controls -->
+			<a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+				<i class="fa fa-angle-left"></i>
+			</a>
+			<a class="carousel-control-next" href="#myCarousel" data-slide="next">
+				<i class="fa fa-angle-right"></i>
+			</a>
+		</div>
+		</div>
+	</div>
+</div>
+<script nonce="46f5ddcd-ea51-4f19-bc1e-86f04490d23f">(function(w,d){!function(Z,_,ba,bb){Z.zarazData=Z.zarazData||{};Z.zarazData.executed=[];Z.zaraz={deferred:[],listeners:[]};Z.zaraz.q=[];Z.zaraz._f=function(bc){return function(){var bd=Array.prototype.slice.call(arguments);Z.zaraz.q.push({m:bc,a:bd})}};for(const be of["track","set","debug"])Z.zaraz[be]=Z.zaraz._f(be);Z.zaraz.init=()=>{var bf=_.getElementsByTagName(bb)[0],bg=_.createElement(bb),bh=_.getElementsByTagName("title")[0];bh&&(Z.zarazData.t=_.getElementsByTagName("title")[0].text);Z.zarazData.x=Math.random();Z.zarazData.w=Z.screen.width;Z.zarazData.h=Z.screen.height;Z.zarazData.j=Z.innerHeight;Z.zarazData.e=Z.innerWidth;Z.zarazData.l=Z.location.href;Z.zarazData.r=_.referrer;Z.zarazData.k=Z.screen.colorDepth;Z.zarazData.n=_.characterSet;Z.zarazData.o=(new Date).getTimezoneOffset();Z.zarazData.q=[];for(;Z.zaraz.q.length;){const bl=Z.zaraz.q.shift();Z.zarazData.q.push(bl)}bg.defer=!0;for(const bm of[localStorage,sessionStorage])Object.keys(bm||{}).filter((bo=>bo.startsWith("_zaraz_"))).forEach((bn=>{try{Z.zarazData["z_"+bn.slice(7)]=JSON.parse(bm.getItem(bn))}catch{Z.zarazData["z_"+bn.slice(7)]=bm.getItem(bn)}}));bg.referrerPolicy="origin";bg.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(Z.zarazData)));bf.parentNode.insertBefore(bg,bf)};["complete","interactive"].includes(_.readyState)?zaraz.init():Z.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,0,"script");})(window,document); </script>
+</body>
+</html>          
