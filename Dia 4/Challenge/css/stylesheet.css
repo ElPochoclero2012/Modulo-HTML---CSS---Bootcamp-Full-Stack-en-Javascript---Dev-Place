@@ -142,10 +142,3 @@ h2::after {
 .carousel-indicators li.active {	
 	background: rgba(0, 0, 0, 0.6);
 }
-.star-rating li {
-	padding: 0;
-}
-.star-rating i {
-	font-size: 14px;
-	color: #ffc000;
-}
