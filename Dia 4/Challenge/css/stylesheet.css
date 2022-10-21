@@ -3,6 +3,7 @@
     display: block;
     margin: auto;
     z-index: -1;
+	overflow: hidden;
 }
 body {
 	font-family: "Open Sans", sans-serif;

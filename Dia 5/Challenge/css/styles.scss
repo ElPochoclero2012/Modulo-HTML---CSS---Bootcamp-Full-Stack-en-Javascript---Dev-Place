@@ -1,0 +1,167 @@
+//variables
+
+$color-principal: rgb(255, 255, 255);
+$color-letra: black;
+$color-nav: rgb(247, 247, 247);
+$color-letra-nav: yellow;
+$fondo-form: rgb(170, 165, 165);
+
+@mixin caja($color-principal: white) {
+  background-color: $color-principal;
+  border: 1px solid rgb(228, 225, 225);
+  box-shadow: 2px 2px 2px rgb(189, 189, 189);
+  color: $color-letra;
+}
+
+body {
+  background: $color-principal;
+}
+
+div {
+  color: $color-letra;
+}
+
+header {
+  background: $color-nav;
+}
+
+form {
+  @include caja();
+  box-shadow: 0px 0px 2px black;
+  padding: 50px;
+  border-radius: 10%;
+}
+
+.contenedor {
+  @include caja();
+  width: 100%;
+  height: auto;
+}
+
+.Contacto {
+  small {
+    text-decoration: underline;
+  }
+}
+
+h2 {
+  text-align: center;
+}
+
+.carousel {
+  margin: 50px auto;
+  padding: 0 70px;
+
+  .carousel-item {
+    min-height: 330px;
+    text-align: center;
+    overflow: hidden;
+
+    .carousel-item .img-box {
+      height: 160px;
+      width: 100%;
+      position: relative;
+    }
+    .carousel-item img {
+      max-width: 100%;
+      max-height: 100%;
+      display: inline-block;
+      position: absolute;
+      bottom: 0;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+    }
+    .carousel-item h4 {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+    .carousel-item .btn {
+      color: #333;
+      border-radius: 0;
+      font-size: 11px;
+      text-transform: uppercase;
+      font-weight: bold;
+      background: none;
+      border: 1px solid #ccc;
+      padding: 5px 10px;
+      margin-top: 5px;
+      line-height: 16px;
+    }
+    .carousel .carousel-item .btn:hover,
+    .carousel .carousel-item .btn:focus {
+      color: #fff;
+      background: #000;
+      border-color: #000;
+      box-shadow: none;
+    }
+    .carousel .carousel-item .btn i {
+      font-size: 14px;
+      font-weight: bold;
+      margin-left: 5px;
+    }
+  }
+  .carousel .thumb-wrapper {
+    text-align: center;
+  }
+  .carousel .thumb-content {
+    padding: 15px;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    height: 100px;
+    width: 40px;
+    background: none;
+    margin: auto 0;
+    background: rgba(0, 0, 0, 0.2);
+  }
+  .carousel-control-prev i,
+  .carousel-control-next i {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    margin: -16px 0 0 0;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: none;
+    font-weight: bold;
+  }
+  .carousel-control-prev i {
+    margin-left: -3px;
+  }
+  .carousel-control-next i {
+    margin-right: -3px;
+  }
+  .item-price {
+    font-size: 13px;
+    padding: 2px 0;
+  }
+  .item-price strike {
+    color: #999;
+    margin-right: 5px;
+  }
+  .item-price span {
+    color: #86bd57;
+    font-size: 110%;
+  }
+  .carousel-indicators {
+    bottom: -50px;
+  }
+  .carousel-indicators li, .carousel-indicators li.active {
+    width: 10px;
+    height: 10px;
+    margin: 4px;
+    border-radius: 50%;
+    border-color: transparent;
+    border: none;
+  }
+  .carousel-indicators li {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  .carousel-indicators li.active {
+    background: rgba(0, 0, 0, 0.6);
+  }
+}
