@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  align-items: center;
+  height: 60px;
+  background-color: #212121;
+  overflow: hidden;
+}
+header .left {
+  display: flex;
+  align-items: center;
+}
+header .left #menu {
+  padding: 0 7px;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  header .left #menu {
+    display: none;
+  }
+}
+header .center {
+  display: flex;
+  align-items: center;
+}
+header .center form {
+  display: flex;
+  border: 1px solid hsl(0deg, 0%, 18.82%);
+  height: 45px;
+}
+header .center form input {
+  width: 600px;
+  padding: 10px;
+  border: 0;
+  height: 100%;
+  border-radius: 2px 0 0 2px;
+  background: #212121;
+}
+header .center form input:focus {
+  outline: none;
+  border: 1px solid #3ea6ff;
+}
+header .center form button {
+  height: 100%;
+  width: 60px;
+  border: none;
+  background: hsl(0deg, 0%, 18.82%);
+}
+@media (max-width: 1030px) {
+  header .center {
+    display: none;
+  }
+}
+@media (max-width: 1030px) {
+  header {
+    width: 100%;
+  }
+}
+header .material-icons {
+  color: #fff;
+  padding: 0 7px;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: auto;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,68 @@
+$negroYT: #212121;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    height: 60px;
+    background-color: $negroYT;
+    overflow: hidden;
+
+    .left{
+        display: flex;
+        align-items: center;
+    }
+    .left #menu{
+        padding: 0 7px;
+        cursor: pointer;
+        @media (max-width:600px){
+            display: none;
+        }
+    }
+
+    .center{
+        display: flex;
+        align-items: center;
+        form{
+            display: flex;
+            border: 1px solid hsl(0, 0%, 18.82%);
+            height: 45px;
+            input{
+                width: 600px;
+                padding: 10px;
+                border: 0;
+                height: 100%;
+                border-radius: 2px 0 0 2px;
+                background: $negroYT;
+                &:focus{
+                    outline: none;
+                    border: 1px solid #3ea6ff;
+                }
+            }
+            button{
+                height: 100%;
+                width: 60px;
+                border: none;
+                background: hsl(0, 0%, 18.82%);
+            }
+        }
+        @media (max-width:1030px) {
+            display: none;
+        }
+        
+    }
+    @media (max-width:1030px) {
+        width: 100%;
+    }
+
+    .material-icons{
+        color: #fff;
+        padding: 0 7px;
+        cursor: pointer;
+    }
+
+}

@@ -1,0 +1,106 @@
+
+$back-color: #212121;
+* {
+        margin: 0;
+        padding: auto;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        background-color: $back-color;
+      } 
+.Flex_container{
+    display: flex;
+    width: 100%;
+    height: 70%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 93px;
+    overflow: hidden;
+    border-top: 2px solid rgb(193, 193, 193);
+    border-bottom: 2px solid rgb(193, 193, 193);
+    
+
+    
+    
+    h2{
+        color: white;
+        padding: 15px
+
+    }
+    
+    .shorts{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        height: max-content;
+        overflow: hidden;
+        
+    }
+    .card{
+        
+        color: white;
+        margin: 2vw;
+        margin-top: 4vw;
+        width: 173px;
+        height: max-content;
+        padding:4px;
+        background-color: transparent;
+        overflow: hidden;
+        img{
+            width: 172.66px;
+            height: 305.59px;
+        }
+        p{
+            color: rgb(160, 160, 160);
+        }
+
+        &:hover{
+            .puntos{
+            cursor: pointer;
+            visibility: visible;}
+        }
+        .puntos{
+            visibility: hidden;
+            width: 15px;
+            height: auto;
+            float: right;
+            
+        }
+    }
+
+    .par1{
+        
+        width:100%;
+        padding: 7px;
+        background-color: $back-color;
+        color: rgb(255, 255, 255);
+        border: none;
+        height: 48px;
+        &:hover{
+            background-color: $back-color;
+            #icono{
+                background-color: $back-color;
+            }
+        }
+    }
+
+    
+}
+
+
+#hide-me{
+    display: none;
+    width: 80%;
+   margin: auto !important;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   color: white;
+}
+
+#cortos{
+    z-index: -2!important;
+}
+
+
+  
+  

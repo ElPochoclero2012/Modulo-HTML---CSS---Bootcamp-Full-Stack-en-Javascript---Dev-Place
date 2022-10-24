@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: auto;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-color: #212121;
+}
+
+.Flex_container {
+  display: flex;
+  width: 100%;
+  height: 70%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 93px;
+  overflow: hidden;
+  border-top: 2px solid rgb(193, 193, 193);
+  border-bottom: 2px solid rgb(193, 193, 193);
+}
+.Flex_container h2 {
+  color: white;
+  padding: 15px;
+}
+.Flex_container .shorts {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: max-content;
+  overflow: hidden;
+}
+.Flex_container .card {
+  color: white;
+  margin: 2vw;
+  margin-top: 4vw;
+  width: 173px;
+  height: max-content;
+  padding: 4px;
+  background-color: transparent;
+  overflow: hidden;
+}
+.Flex_container .card img {
+  width: 172.66px;
+  height: 305.59px;
+}
+.Flex_container .card p {
+  color: rgb(160, 160, 160);
+}
+.Flex_container .card:hover .puntos {
+  cursor: pointer;
+  visibility: visible;
+}
+.Flex_container .card .puntos {
+  visibility: hidden;
+  width: 15px;
+  height: auto;
+  float: right;
+}
+.Flex_container .par1 {
+  width: 100%;
+  padding: 7px;
+  background-color: #212121;
+  color: rgb(255, 255, 255);
+  border: none;
+  height: 48px;
+}
+.Flex_container .par1:hover {
+  background-color: #212121;
+}
+.Flex_container .par1:hover #icono {
+  background-color: #212121;
+}
+
+#hide-me {
+  display: none;
+  width: 80%;
+  margin: auto !important;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  color: white;
+}
+
+#cortos {
+  z-index: -2 !important;
+}
+
+/*# sourceMappingURL=short.css.map */
